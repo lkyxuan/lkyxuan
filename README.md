@@ -1,15 +1,15 @@
 ### Hi there 👋
-
+👋 Hi, I’m @lkyxuan
+👀 I’m interested in Product.
+🌱 I’m currently learning Sodility
+💞️ I’m looking to collaborate on Ethereum
+📫 How to reach me multilkyx@gmail.com
 <!--
 **lkyxuan/lkyxuan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
-👋 Hi, I’m @Multimyst
-👀 I’m interested in Product.
-🌱 I’m currently learning Sodility
-💞️ I’m looking to collaborate on Ethereum
-📫 How to reach me likongyixuanshnu@gmail.com
+
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...

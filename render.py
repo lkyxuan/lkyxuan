@@ -33,11 +33,11 @@ QUERY = ("query{viewer{contributionsCollection{contributionCalendar{weeks{contri
 
 
 def machine_name():
-    model = subprocess.run(["sysctl", "-n", "hw.model"], capture_output=True, text=True).stdout
-    for prefix, name in (("MacBookPro", "macbook pro"), ("MacBookAir", "macbook air"), ("Macmini", "mac mini"),
-                         ("MacStudio", "mac studio"), ("iMac", "imac"), ("MacPro", "mac pro")):
-        if model.startswith(prefix):
-            return name
+    # hw.model is no use here: newer machines report ids like Mac16,10.
+    out = subprocess.run(["system_profiler", "SPHardwareDataType"], capture_output=True, text=True).stdout
+    for line in out.splitlines():
+        if "Model Name:" in line:
+            return line.split(":", 1)[1].strip().lower()
     return "mac"
 
 
